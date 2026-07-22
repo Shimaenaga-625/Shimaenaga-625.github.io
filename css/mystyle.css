@@ -1,0 +1,617 @@
+@charset "utf-8";
+
+body {
+    background-image: url(../image/image_back.jpg);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #EE0660;
+    color: #ffffff;
+}
+
+.header-in {
+    width: 960px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header img {
+    float: left;
+}
+
+nav ul {
+    font-weight: bold;
+    text-align: right;
+    padding-top: 35px;
+    padding-bottom: 5px;
+    margin: 0;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav ul a:hover {
+    color: #FFD802;
+}
+
+nav ul a:active {
+    color: #FF3636;
+}
+
+nav li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 12px;
+    border-right: 1px solid #fff;
+}
+
+article {
+    position: relative;
+    clear: both;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    font-size: 90%;
+    line-height: 1.8;
+    padding-left: 20px;
+}
+
+h1 {
+    font-size: 180%;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0px;
+}
+
+h2 {
+    font-size: 180%;
+    border-bottom: 1px dashed #EE0660;
+    border-left: 10px solid #EE0660;
+    padding-left: 10px;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 150%;
+    /*文字色*/
+    padding: 0.5em;
+    /*文字周りの余白*/
+    display: inline-block;
+    /*おまじない*/
+    line-height: 1.2;
+    /*行高*/
+    background: #F5D430;
+    /*背景色*/
+    vertical-align: middle;
+    border-radius: 25px 0px 0px 25px;
+    /*左側の角を丸く*/
+    margin-bottom: 1px;
+}
+
+h3:before {
+    content: '●';
+    color: #f3f4ee;
+    margin-right: 8px;
+}
+
+h3 a {
+    color: #EE0660;
+}
+
+h3 a:hover {
+    color: #C60EDA;
+}
+
+.catch {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: #ffffff;
+    text-shadow: 0px 5px 10px #000000;
+}
+
+.catch-p {
+    font-size: 110%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.8;
+    font-size: 100%;
+}
+
+ul time {
+    border-radius: 10px;
+    background-color: #999999;
+    color: #ffffff;
+    font-size: 90%;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+.index-section {
+    color: #000000;
+}
+
+.red {
+    color: #EE0660;
+}
+
+footer {
+    text-align: center;
+    border: 1px solid lime;
+    background-color: #EE0660;
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.page {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ol-flow {
+    padding-left: 0;
+}
+
+.ol-flow li {
+    display: inline;
+    margin-right: 5px;
+}
+
+.contents-h1 {
+    position: relative;
+    /*相対位置*/
+    padding: 8px 8px 8px 45px;
+    /*アイコン分のスペース*/
+    line-height: 1.4;
+    /*行高*/
+    color: #EE0660;
+    /*文字色*/
+    border-top: dotted 1px gray;
+    border-bottom: dotted 1px gray;
+    background: #fffeee;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contents-h1:before {
+    font-family: "Font Awesome 5 Free";
+    /*忘れずに*/
+    content: "\f138";
+    /*アイコンのユニコード*/
+    font-weight: 900;
+    position: absolute;
+    /*絶対位置*/
+    font-size: 85%;
+    /*サイズ*/
+    left: 12px;
+    /*アイコンの位置*/
+    top: 14px;
+    /*アイコンの位置*/
+    color: #EE0660;
+    /*アイコン色*/
+}
+
+.contents1-p {
+    color: #EE0660;
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-size: 120%;
+    padding-left: 50px;
+    line-height: 1.0;
+}
+
+.contents1-list {
+    font-weight: bold;
+    padding: 0px 0px 0px 100px;
+    position: relative;
+    font-size: 110%;
+}
+
+.contents1-list li {
+    line-height: 1.5;
+    padding: 8px 0;
+    list-style-type: none !important;
+    /*ポチ消す*/
+}
+
+.contents1-list li:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: '\f0c3';
+    /*アイコン種類*/
+    position: absolute;
+    left: 75px;
+    /*左端からのアイコンまで*/
+    color: #EE0660;
+    /*アイコン色*/
+}
+
+.contents1-list a {
+    color: #EE0660;
+}
+
+.contents1-img {
+    box-shadow: 0px 0px 10px 3px #aaaaaa;
+    border-radius: 10px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.sentou {
+    clear: both;
+    text-align: right;
+}
+
+.contents2-box {
+    position: relative;
+    padding: 8px 16px;
+    margin: 32px 0;
+    font-weight: bold;
+    color: #C60EDA;
+    /*文字色*/
+    border: solid 3px #C60EDA;
+    /*線*/
+    border-radius: 10px;
+    /*角の丸み*/
+}
+
+.contents2-box .box-title {
+    font-family: "Yusei Magic", sans-serif;
+    position: absolute;
+    display: inline-block;
+    top: -13px;
+    left: 10px;
+    padding: 0 9px;
+    line-height: 1;
+    font-size: 30px;
+    background: #F3F4EE;
+    color: #C60EDA;
+    letter-spacing: 3px;
+}
+
+.contents2-box p {
+    font-family: "Yusei Magic", sans-serif;
+    font-weight: 400;
+    font-size: 130%;
+    color: #333;
+    margin: 20px 0 0 10px;
+    padding: 0;
+}
+
+.accordion {
+    max-width: 500px;
+    margin-bottom: 7px;
+    border-bottom: 2px solid #C60EDA;
+}
+
+.accordion summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 8px 32px;
+    color: #C60EDA;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: "Yusei Magic", sans-serif;
+    font-size: 150%;
+}
+
+.accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion summary::after {
+    transform: translateY(-25%) rotate(45deg);
+    width: 7px;
+    height: 7px;
+    margin-left: 10px;
+    border-bottom: 5px solid #C60EDA;
+    border-right: 5px solid #C60EDA;
+    content: '';
+    transition: transform .3s;
+}
+
+.accordion[open] summary::after {
+    transform: rotate(225deg);
+}
+
+.accordion p {
+    transform: translateY(-10px);
+    color: #333333;
+    transition: transform .5s, opacity .5s;
+}
+
+.accordion[open] p {
+    transform: none;
+    opacity: 1;
+}
+
+.accordion img {
+    position: absolute;
+    margin-left: 30px;
+}
+
+.chat {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 左の吹き出し */
+.chat.left {
+    flex-direction: row;
+    /* 左から右に並べる */
+}
+
+/* 右の吹き出し */
+.chat.right {
+    flex-direction: row-reverse;
+    /* 右から左に並べる */
+}
+
+/* 吹き出しの入力部分の作成 */
+.chatting {
+    position: relative;
+    display: inline-block;
+    /* 吹き出しが文字幅に合わせます */
+    margin: 20px 0px 50px 100px;
+    padding: 0px 20px 0px 0px;
+    color: #333;
+    font-size: 18px;
+    text-align: left;
+    /*テキストの位置*/
+    border-radius: 12px;
+    /*吹き出しの丸み具合*/
+    line-height: 1.5;
+}
+
+.chatting.kuma {
+    background: #9dd5d3;
+    /*吹き出しのカラー*/
+}
+
+.chatting.usagi {
+    background: #ee7e78;
+    /*吹き出しのカラー*/
+}
+
+/* 吹き出しの三角部分の作成 */
+.chatting::after {
+    content: "";
+    border: 15px solid transparent;
+    position: absolute;
+    top: 15px;
+    /*三角部分の高さ*/
+}
+
+.left .chatting::after {
+    left: -25px;
+    /*左側の三角部分の位置を変更*/
+    border-right: 15px solid #9dd5d3;
+    border-bottom: 15px solid #9dd5d3;
+}
+
+.right .chatting::after {
+    right: -25px;
+    /*右側の三角部分の位置を変更*/
+    border-left: 15px solid #ee7e78;
+    border-bottom: 15px solid #ee7e78;
+}
+
+/* アイコンの作成 */
+.chat figure img {
+    border-radius: 50%;
+    /*丸の設定*/
+    border: 1px solid #333;
+    /*アイコンの枠のカラーと太さはここで変更*/
+    margin: 0;
+}
+
+.chatting p {
+    width: 200px;
+}
+
+.chat-text {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.icon-name {
+    font-size: 80%;
+    text-align: center;
+}
+
+.contents3-h2 {
+    border-bottom: 1px dashed #EE8F00;
+    border-left: 10px solid #EE8F00;
+}
+
+.contents3-list {
+    border: 2px solid #ee8f00;
+    width: 300px;
+    margin: 30px 0px;
+}
+
+.contents3-list div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ee8f00;
+    color: #fff;
+    font-weight: 600;
+    font-size: 110%;
+}
+
+.contents3-list ol {
+    margin: 0;
+    padding: 8px;
+    counter-reset: number;
+    list-style-type: none !important;
+}
+
+.contents3-list li {
+    position: relative;
+    padding-left: 30px;
+    padding: 7px 7px 7px 100px;
+    line-height: 24px;
+}
+
+.contents3-list li:before {
+    /* 数字をつける */
+    position: absolute;
+    counter-increment: number;
+    content: counter(number);
+    /* 数字のデザイン */
+    display: inline-block;
+    background-color: #ee8f00;
+    color: #fff;
+    font-family: 'Avenir', 'Arial Black', 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    border-radius: 50%;
+    left: 70px;
+    width: 23px;
+    height: 23px;
+    line-height: 23px;
+    text-align: center;
+    /* 上下中央寄せ */
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.contents3-list li::marker {
+    color: #ee8f00;
+    font-size: 18px;
+}
+
+.contents3-list a {
+    text-decoration: underline;
+    color: #ee8f00;
+}
+
+.contents3-1-img {
+    box-shadow: 0px 0px 10px 3px #aaaaaa;
+    border-radius: 10px;
+    float: right;
+    margin-top: 100px;
+}
+
+.contents3-2-img {
+    box-shadow: 0px 0px 10px 3px #aaaaaa;
+    border-radius: 10px;
+    float: right;
+    margin-top: 10px;
+}
+
+.contents3 p {
+    margin-bottom: 250px;
+    width: 650px;
+}
+
+.contents3-a .chatting {
+    position: relative;
+    display: inline-block;
+    /* 吹き出しが文字幅に合わせます */
+    margin: 0;
+    margin-bottom: 100px;
+    padding: 0px 20px 0px 0px;
+    color: #333;
+    font-size: 18px;
+    text-align: left;
+    /*テキストの位置*/
+    border-radius: 12px;
+    /*吹き出しの丸み具合*/
+    line-height: 1.5;
+}
+
+.left2 .chatting::after {
+    left: -25px;
+    /*左側の三角部分の位置を変更*/
+    border-right: 15px solid #ee7e78;
+    border-bottom: 15px solid #ee7e78;
+}
+
+/* 959px以下の場合 */
+@media (max-width: 990px) {
+    nav ul {
+        text-align: left;
+        padding: 0;
+        margin-left: 10px;
+    }
+
+    header img {
+        float: none;
+        padding-left: 5px;
+    }
+
+    article {
+        width: auto;
+    }
+
+    article img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .header-in {
+        width: auto;
+        height: 105px;
+    }
+}
+
+/* 600px以下の場合 */
+@media(max-width: 600px) {
+    nav li {
+        font-size: 80%;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    footer {
+        font-size: 75%;
+    }
+
+    .catch {
+        top: 5px;
+        left: 10px;
+    }
+
+    .point-img {
+        float: none;
+    }
+
+    .header-in {
+        width: auto;
+    }
+}
