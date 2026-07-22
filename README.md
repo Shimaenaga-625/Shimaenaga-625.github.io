@@ -1,1 +1,0 @@
-# Shimaenaga-625.github.io
